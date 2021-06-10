@@ -6,7 +6,7 @@ if (!(inputA instanceof HTMLInputElement)) {
 if (!(inputB instanceof HTMLInputElement)) {
   throw new Error("Can't find input with id b");
 }
-aa
+
 const convertC = () => {
   let val_a = Number(inputA.value);
   inputB.value = ((val_a - 32) / 1.8).toFixed(2);
@@ -17,3 +17,5 @@ const convertF = () => {
 };
 inputA.addEventListener("input", convertC);
 inputB.addEventListener("input", convertF);
+
+
