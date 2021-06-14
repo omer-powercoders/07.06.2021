@@ -11,7 +11,7 @@ function RandomTitle(App: { titles: any; }) {
         <main>
             <p>{title}</p>
             <button onClick={() => newTitle(titles[Math.floor(Math.random()*titles.length)])}>
-                New Title
+                Click and see your book!
             </button>
         </main>
     );
