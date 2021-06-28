@@ -1,3 +1,8 @@
-from django.contrib import admin
+from django.contrib.admin import ModelAdmin, register
+from shop.models import Product
 
-# TODO Add admin views
+@register(Product)
+class Product(ModelAdmin):
+    pass
+
+
