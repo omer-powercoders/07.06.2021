@@ -1,7 +1,7 @@
 import * as React from "react";
 import { HashRouter, Switch, Route, Link } from "react-router-dom";
 import * as ReactDOM from "react-dom";
-import {ProductList} from "./components/ProductList";
+import {ProductsList} from "./components/ProductsList";
 
 const appDiv = document.getElementById("app");
 
@@ -12,7 +12,7 @@ if (!(appDiv instanceof HTMLDivElement)) {
 const App = () => <HashRouter>
 	<Switch> 
 	<Route path="/product">Products</Route>
-	<Route path="/"><ProductList/></Route>
+	<Route path="/"><ProductsList/></Route>
 
 	
 	</Switch>
